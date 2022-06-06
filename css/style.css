@@ -158,8 +158,7 @@ h1 {
 
 .mainhomecontent {
     display: flex;
-    padding-top: 200px;
-    padding-bottom: 50px;
+    padding: 150px 16px 50px 16px;
     align-items: center;
 }
 
@@ -168,13 +167,29 @@ h1 {
 }
 
 .home-left {
-    padding-left: 50px;
+    padding-left: 27px;
 }
 
 .home-left h3 {
+    font-size: 24px;
+    padding-left: 5px;
+    padding-right: 16px;
+    white-space: nowrap;
 }
 
 .home-left h2 {
+    font-size: 88px;
+    padding-right: 16px;
+    white-space: nowrap;
+}
+
+.home-left p {
+    line-height: 1.5em;
+    padding-left: 5px;
+}
+
+.mobilehome {
+    display: none;
 }
 
 .home-right {
@@ -183,8 +198,46 @@ h1 {
 }
 
 .home-right img {
-    width: 70%;
+    width: 500px;
 }
+
+@media (max-width: 768px) {
+    .mainhomecontent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-left p {
+        display: none;
+    }
+
+    .home-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .home-right img {
+        padding-left: 12px;
+    }
+
+    .mobilehome {
+        display: flex;
+        line-height: 1.5em;
+        padding-top: 16px;
+        padding-left: 32px;
+        white-space: nowrap;
+    }
+
+}
+
 
 
 
@@ -265,6 +318,7 @@ h1 {
 
 footer {
     padding-top: 48px;
+    width: 100%;
     color: var(--light);
     background-color: var(--dark);
 }
