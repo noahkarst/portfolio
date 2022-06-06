@@ -160,3 +160,143 @@ h1 {
 }
 
 /* End NavBar */
+
+/* Homepage Main \/ */
+
+.mainhomecontent {
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.mainhomecontent > * {
+    flex-basis: 100%;
+}
+
+.home-left {
+    padding-left: 50px;
+}
+
+.home-left h3 {
+}
+
+.home-left h2 {
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+}
+
+.home-right img {
+    width: 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Work page Main \/ */
+
+.workgallery {
+    padding-bottom: 50px;
+}
+
+.workgallery img {
+    width: 300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* About page Main \/ */
+
+
+.mainaboutcontent {
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    align-items: center;
+}
+
+.mainaboutcontent > * {
+    flex-basis: 100%;
+}
+
+
+.about-left img {
+    width: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end main content */
+
+footer {
+    padding: 50px;
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+.footer-top {
+    display: flex;
+}
+
+.footer-top > * {
+    flex-basis: 100%;
+}
+
+.footer-left img {
+    width: 75%;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
