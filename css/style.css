@@ -16,8 +16,7 @@
 /* NavBar */
 
 .nav-container {
-    max-width: 1280px;
-    margin: 0 auto;
+    max-width: 100%;
 
     display: flex;
     align-items: center;
@@ -37,14 +36,12 @@ nav {
 h1 {
     color: var(--light);
     font-size: 28px;
-    font-weight: 900;
-    letter-spacing: 2px;
+    letter-spacing: 4px;
     text-transform: uppercase;
 }
 
 .menu {
     display:none;
-    flex: 1 1 0%;
     justify-content: flex-end;
     margin: 0 -16px;
 }
@@ -52,10 +49,9 @@ h1 {
 .menu a {
     color: var(--light);
     margin: 0 16px;
-    font-weight: 600;
     text-decoration: none;
     padding: 8px 16px;
-    border-radius: 99px;
+    border-radius: 8px;
     transition: 0.4s;
 }
 
@@ -75,20 +71,18 @@ h1 {
 
 .navmenu span {
     display: block;
-    width: 33px;
+    width: 32px;
     height: 4px;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     position: relative;
-
     background-color: var(--light);
     border-radius: 6px;
-
     transform-origin: 0 0;
     transition: 0.2s;
 }
 
 .navmenu button:focus span:nth-child(1) {
-    transform: translate(0px, -2px) rotate(45deg);
+    transform: rotate(45deg);
     background-color: var(--primary);
 }
 
@@ -114,7 +108,7 @@ h1 {
     font-size: 24px;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     list-style: none;
@@ -122,7 +116,6 @@ h1 {
 
     opacity: 0;
     pointer-events: none;
-    transform: translateY(-25px);
     transition: 0.4s;
 }
 
@@ -130,7 +123,7 @@ h1 {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -271,29 +264,96 @@ h1 {
 /* end main content */
 
 footer {
-    padding: 50px;
+    padding-top: 48px;
     color: var(--light);
     background-color: var(--dark);
 }
 
 .footer-top {
     display: flex;
+    padding-bottom: 32px;
 }
 
 .footer-top > * {
     flex-basis: 100%;
 }
 
-.footer-left img {
-    width: 75%;
+.footer-left {
+    padding-left: 32px;
+}
+
+.footer-left h3 {
+    font-size: 32px;
+}
+
+.footer-left p {
+    white-space: nowrap;
+}
+
+.socials a {
+    line-height: 2em;
+    color: var(--light);
+    font-size: 32px;
+    background-color: var(--primary);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.footer-middle {
+    padding: 0 48px 0 48px;
+}
+
+.footer-middle ul, .footer-right ul{
+    list-style: none;
+}
+
+.footer-middle h5, .footer-right h5 {
+    font-size: 32px;
+    line-height: 40px;
+    padding-bottom: 16px;
+    white-space: nowrap;
+}
+
+.footer-middle li, .footer-right li {
+    line-height: 32px;
+}
+
+.footer-middle li a, .footer-right li a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.footer-right {
+    padding-right: 32px;
 }
 
 .footer-bottom {
     display: flex;
+    padding-top: 32px;
+    padding-bottom: 48px;
+    font-size: 16px;
     justify-content: center;
 }
 
+@media (max-width: 900px) {
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        padding-left: 32px;
+    }
 
+    .footer-left, .footer-middle, .footer-right {
+        padding-bottom: 40px;
+        padding-left: 0;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content:flex-start;
+        padding-top: 0px;
+        padding-left: 32px;
+    }
+}
 
 
 
