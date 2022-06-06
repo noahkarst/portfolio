@@ -99,21 +99,17 @@ h1 {
 .navmenu ul {
     position: absolute;
     background-color: var(--light);
-
     margin-top: 40px;
     left: 0;
     right: 0;
-
     line-height: 4rem;
     font-size: 24px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     list-style: none;
     border-bottom: 3px solid var(--primary);
-
     opacity: 0;
     pointer-events: none;
     transition: 0.4s;
@@ -235,26 +231,12 @@ h1 {
         padding-left: 32px;
         white-space: nowrap;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Work page Main \/ */
 
 .workgallery {
-    padding-bottom: 50px;
+    padding: 124px 16px 50px 16px;
 }
 
 .workgallery img {
@@ -337,6 +319,7 @@ footer {
 }
 
 .footer-left h3 {
+    letter-spacing: 4px;
     font-size: 32px;
 }
 
