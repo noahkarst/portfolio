@@ -239,20 +239,37 @@ h1 {
     padding: 124px 16px 50px 16px;
 }
 
-.workgallery img {
-    width: 300px;
+.workgallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
 }
 
+.type-container {
+    padding: 0px 16px 0 16px;
+}
 
+.gallery-type {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 32px 0px;
+    text-decoration: underline dashed;
+}
 
+.workgallery img {
+    width: 350px;
+    height: 400px;
+    object-fit: cover;
+}
 
+.type-container:hover {
+    color: var(--primary);
+}
 
-
-
-
-
-
-
+.workgallery img:hover {
+    opacity: .5;
+}
 
 /* About page Main \/ */
 
@@ -283,18 +300,11 @@ h1 {
 
 
 
+/* Coming Soon */
 
-
-
-
-
-
-
-
-
-
-
-
+.comingsoon-content {
+    font-size: 64px;
+}
 
 /* end main content */
 
