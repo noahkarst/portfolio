@@ -139,7 +139,7 @@ h1 {
     background-color: var(--primary1);
 }
 
-.navmenu button:focus + ul {
+.navmenu-button:focus + ul {
     opacity: 1;
     pointer-events: all;
     transform: translateY(0px);
